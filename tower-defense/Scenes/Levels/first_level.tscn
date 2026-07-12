@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://ce4kanpmo2ib7"]
 
-[ext_resource type="Texture2D" uid="uid://dteaucx7nhxp2" path="res://Assets/FieldsTileset.png" id="1_qcadf"]
+[ext_resource type="Texture2D" uid="uid://dteaucx7nhxp2" path="res://Assets/fields_tileset.png" id="1_pop6l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1hxo4"]
-texture = ExtResource("1_qcadf")
+texture = ExtResource("1_pop6l")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0

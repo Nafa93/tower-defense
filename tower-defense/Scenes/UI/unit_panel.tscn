@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://7u1qp460s8wy"]
 
-[ext_resource type="Script" uid="uid://cfjfths2ej1oq" path="res://Scenes/UI/unit_panel.gd" id="1_s5ihv"]
+[ext_resource type="Script" uid="uid://cfjfths2ej1oq" path="res://Scenes/UI/unit_panel.gd" id="1_7pelu"]
 
 [node name="UnitPanel" type="Control" unique_id=2138826014]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_s5ihv")
+script = ExtResource("1_7pelu")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=303970827]
 layout_mode = 0
