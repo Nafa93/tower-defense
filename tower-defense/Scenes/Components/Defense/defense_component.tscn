@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://d0apdygvikdst"]
+
+[ext_resource type="Script" uid="uid://csou26gp1sp7j" path="res://Scenes/Components/Defense/defense_component.gd" id="1_s4vms"]
+
+[node name="DefenseComponent" type="Node" unique_id=379233599]
+script = ExtResource("1_s4vms")

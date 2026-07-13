@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://yjidjb8yhdmn"]
+
+[ext_resource type="Script" uid="uid://dn014j1lqimbl" path="res://Scenes/Components/Attack/Behaviors/melee_attack_behavior.gd" id="1_jllrs"]
+
+[node name="MeleeAttackBehavior" type="Node" unique_id=1411046321]
+script = ExtResource("1_jllrs")

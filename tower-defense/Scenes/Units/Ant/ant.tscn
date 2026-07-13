@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ctkdpwcyeclcs"]
+
+[ext_resource type="SpriteFrames" uid="uid://ch6tmyxe337ha" path="res://Assets/Ant/Ant.tres" id="1_8j3x8"]
+[ext_resource type="Script" uid="uid://cucbbgbty57ax" path="res://Scenes/Units/Ant/ant.gd" id="1_dbju1"]
+[ext_resource type="PackedScene" uid="uid://t7di3gjb002a" path="res://Scenes/Components/Attack/attack_component.tscn" id="2_pus7u"]
+[ext_resource type="PackedScene" uid="uid://d0apdygvikdst" path="res://Scenes/Components/Defense/defense_component.tscn" id="3_thvls"]
+[ext_resource type="PackedScene" uid="uid://bggxuihbg0xfw" path="res://Scenes/Components/Health/health_component.tscn" id="4_dbju1"]
+[ext_resource type="PackedScene" uid="uid://c4ajyr0ncur6k" path="res://Scenes/Components/Movement/movement_component.tscn" id="5_f05d0"]
+[ext_resource type="PackedScene" uid="uid://yjidjb8yhdmn" path="res://Scenes/Components/Attack/Behaviors/melee_attack_behavior.tscn" id="6_thvls"]
+
+[node name="Ant" type="Node2D" unique_id=1709118298 node_paths=PackedStringArray("health_component", "attack_component", "defense_component", "movement_component")]
+script = ExtResource("1_dbju1")
+health_component = NodePath("HealthComponent")
+attack_component = NodePath("AttackComponent")
+defense_component = NodePath("DefenseComponent")
+movement_component = NodePath("MovementComponent")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1631459727]
+sprite_frames = ExtResource("1_8j3x8")
+animation = &"side_walk"
+
+[node name="AttackComponent" parent="." unique_id=953929561 node_paths=PackedStringArray("attack_behavior") instance=ExtResource("2_pus7u")]
+attack_behavior = NodePath("../MeleeAttackBehavior")
+
+[node name="DefenseComponent" parent="." unique_id=379233599 instance=ExtResource("3_thvls")]
+
+[node name="HealthComponent" parent="." unique_id=1353365355 instance=ExtResource("4_dbju1")]
+
+[node name="MovementComponent" parent="." unique_id=960796283 instance=ExtResource("5_f05d0")]
+
+[node name="MeleeAttackBehavior" parent="." unique_id=1411046321 instance=ExtResource("6_thvls")]
