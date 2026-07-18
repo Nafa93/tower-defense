@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DisplayableUnit" format=3 uid="uid://7qs7brc35oon"]
+
+[ext_resource type="Texture2D" uid="uid://8xx84n1iwa8p" path="res://icon.svg" id="1_yrlhf"]
+[ext_resource type="PackedScene" uid="uid://ctkdpwcyeclcs" path="res://Scenes/Units/Ant/ant.tscn" id="2_h7lk6"]
+[ext_resource type="Script" uid="uid://cxj56aojrne8k" path="res://Scenes/UI/DisplayableUnit/displayable_unit.gd" id="3_iiajr"]
+
+[resource]
+script = ExtResource("3_iiajr")
+name = "Ant"
+icon = ExtResource("1_yrlhf")
+scene = ExtResource("2_h7lk6")

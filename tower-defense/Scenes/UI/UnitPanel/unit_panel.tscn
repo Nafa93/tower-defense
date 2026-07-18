@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://7u1qp460s8wy"]
+
+[ext_resource type="Script" uid="uid://cfjfths2ej1oq" path="res://Scenes/UI/UnitPanel/unit_panel.gd" id="1_7pelu"]
+[ext_resource type="Script" uid="uid://cxj56aojrne8k" path="res://Scenes/UI/DisplayableUnit/displayable_unit.gd" id="2_c0gcc"]
+[ext_resource type="Resource" uid="uid://7qs7brc35oon" path="res://Scenes/Units/Ant/ant_displayable_unit.tres" id="3_avgo8"]
+
+[node name="UnitPanel" type="Control" unique_id=2138826014]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_7pelu")
+available_units = Array[ExtResource("2_c0gcc")]([ExtResource("3_avgo8")])
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=303970827]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer" unique_id=281563290]
+layout_mode = 2

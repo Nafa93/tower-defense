@@ -8,9 +8,7 @@ func move_toward(position: Vector2, delta: float) -> void:
 	
 	if moving_unit == null:
 		return
-
-	print("Moving towards: x:%d, y:%d" % [position.x, position.y])
-
+		
 	moving_unit.global_position = moving_unit.global_position.move_toward(
 		position,
 		movement_speed * delta
