@@ -12,6 +12,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var world_pos: Vector2 = get_global_mouse_position()
+	#var world_pos: Vector2 = get_global_mouse_position()
 	
-	movement_component.move_toward(world_pos, delta)
+	#movement_component.move_toward(world_pos, delta)
+	return
